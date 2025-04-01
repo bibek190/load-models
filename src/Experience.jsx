@@ -1,14 +1,16 @@
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Sky } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { Perf } from "r3f-perf";
 
 import Model from "./Model";
 import { Suspense } from "react";
 import PlaceHolder from "./PlaceHolder";
+import Fox from "./Fox";
 
 export default function Experience() {
   return (
     <>
+      <Sky />
       <Perf position="top-left" />
 
       <OrbitControls makeDefault />
@@ -37,6 +39,7 @@ export default function Experience() {
       </mesh>
       <Suspense fallback={<PlaceHolder position-y={0.5} scale={[2, 3, 2]} />}>
         <Model />
+        <Fox />
       </Suspense>
     </>
   );

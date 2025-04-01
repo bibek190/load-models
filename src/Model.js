@@ -13,6 +13,7 @@ const Model = () => {
       loader.setDRACOLoader(dracoLoader);
     }
   );
+
   return (
     <>
       <primitive object={model.scene} scale={5} position-y={-1} />

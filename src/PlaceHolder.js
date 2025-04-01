@@ -4,7 +4,7 @@ const PlaceHolder = (props) => {
   return (
     <>
       <mesh {...props}>
-        <sphereGeometry args={[0.5, 32, 32]} />
+        <boxGeometry args={[0.5, 32, 32]} />
         <meshBasicMaterial color="red" />
       </mesh>
     </>
