@@ -35,7 +35,7 @@ export default function Experience() {
         <planeGeometry />
         <meshStandardMaterial color="greenyellow" />
       </mesh>
-      <Suspense fallback={<PlaceHolder position-y={1.5} scale={[2, 3, 2]} />}>
+      <Suspense fallback={<PlaceHolder position-y={0.5} scale={[2, 3, 2]} />}>
         <Model />
       </Suspense>
     </>
